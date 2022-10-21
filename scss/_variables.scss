@@ -1,0 +1,28 @@
+$fuenteTitulos:null;
+$colorTitulos:null;
+$decoracionTitulos:null;
+$colorTextos:null;
+$fuenteTextos:null;
+
+$rem:16px;
+$alturaFooter:5vh;
+
+$vista: ("vistaDesktopSm": desktopSm,
+    "vistaTablet":tablet,
+    "vistaMobile":mobile, );
+
+$paletaDeColores: ("color-logo": #DEE2E6,
+    "color-titulos": #212529,
+    "color-parrafos":#555459,
+    "color-headerUno":#343A40,
+    "color-texto-headerTres":rgb(230, 230, 230),
+    "color-texto-footer": rgb(160, 160, 160),
+);
+
+$fuentes: ("bold": Hind-Bold,
+    "regular": Hind-Regular,
+    "hachi": Hachi-Maru-Pop,
+);
+
+$clasesTextos: (textoHeaderTres: (map-get($paletaDeColores, "color-texto-headerTres")),
+    textoFooter: (map-get($paletaDeColores, "color-texto-footer")));

@@ -1,0 +1,19 @@
+@import './variables';
+@import './fuentes';
+
+@import './body';
+
+@import './headers';
+@import './titulos';
+@import './main';
+@import './compartir';
+@import './footer';
+
+@import './mediaQuery';
+@include mediaQuery(map-get($vista, "vistaDesktop"));
+@include mediaQuery(map-get($vista, "vistaDesktopSm"));
+@include mediaQuery(map-get($vista, "vistaTablet"));
+@include mediaQuery(map-get($vista, "vistaMobile"));
+
+@import './404';
+@include error-404;
