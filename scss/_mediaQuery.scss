@@ -14,17 +14,6 @@
                 }
             }
 
-
-            footer {
-                height: $alturaFooter*2;
-
-                nav {
-                    div {
-                        @include flexbox($posicionamiento:col);
-                    }
-                }
-            }
-
             #headerDos {
                 div {
                     nav {
@@ -53,15 +42,6 @@
                 }
             }
 
-            footer {
-                height: $alturaFooter*2;
-
-                nav {
-                    div {
-                        @include flexbox($posicionamiento:col);
-                    }
-                }
-            }
 
             #headerDos {
                 div {
@@ -81,6 +61,37 @@
 
             .btnBuscar {
                 display: none !important;
+            }
+
+            footer {
+                div {
+                    div {
+                        .footerMobile {
+                            ul {
+                                margin: $rem*0 $rem*0 $rem*0 $rem*0;
+                                padding: $rem*0 $rem*0 $rem*0 $rem*0;
+
+                                .redesDesktop {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+                .redesMobile {
+                    display: contents;
+
+                    div {
+                        nav {
+                            ul {
+                                margin: $rem*0 $rem*0 $rem*0 $rem*0;
+                                padding: $rem*0 $rem*0 $rem*0 $rem*4;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -93,17 +104,6 @@
                 }
             }
 
-
-            footer {
-                height: $alturaFooter*2;
-
-                nav {
-                    div {
-                        @include flexbox($posicionamiento:col);
-                    }
-                }
-            }
-
             #headerDos {
                 div {
                     nav {
@@ -122,6 +122,37 @@
 
             .btnBuscar {
                 display: none !important;
+            }
+
+            footer {
+                div {
+                    div {
+                        .footerMobile {
+                            ul {
+                                margin: $rem*0 $rem*0 $rem*0 $rem*0;
+                                padding: $rem*0 $rem*0 $rem*0 $rem*0;
+
+                                .redesDesktop {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+                .redesMobile {
+                    display: contents;
+
+                    div {
+                        nav {
+                            ul {
+                                margin: $rem*0 $rem*0 $rem*0 $rem*0;
+                                padding: $rem*0 $rem*0 $rem*0 $rem*4;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -153,6 +184,7 @@
         @include compartir;
 
         @include footer;
+
 
     }
 }

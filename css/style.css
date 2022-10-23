@@ -51,7 +51,8 @@ a {
   background-color: #343A40; }
 
 #headerDos div nav div div ul li {
-  font-size: 16.84211px; }
+  font-size: 16.84211px;
+  font-family: Hind-Regular; }
 
 #headerDos div nav div div ul .listaNavUno {
   padding-left: 3vw; }
@@ -81,39 +82,48 @@ main div div div .underlineNoticias:hover {
 main div div div .imgNoticias:hover {
   animation: none; }
 
-section .compartir ul {
+.compartir ul {
   display: flex;
   justify-content: space-between;
   align-items: center; }
-  section .compartir ul li .twitter {
+  .compartir ul li .twitter {
     color: #1d9bf0; }
-  section .compartir ul li .facebook {
+  .compartir ul li .facebook {
     color: #1877f2; }
-  section .compartir ul li .whatsapp {
+  .compartir ul li .whatsapp {
     color: #00e676; }
-  section .compartir ul li .instagram {
+  .compartir ul li .instagram {
     color: #ea0c5f; }
-  section .compartir ul li .fa-shake {
+  .compartir ul li .fa-shake {
     animation-duration: 0s; }
-  section .compartir ul li .fa-shake:hover {
+  .compartir ul li .fa-shake:hover {
     animation-duration: 2s; }
 
-footer {
-  height: 10vh; }
-  footer nav div ul li a {
-    font-size: 17.77778px; }
-  footer nav div ul li .errorFooter {
+footer div div nav ul {
+  list-style: none; }
+  footer div div nav ul li .textoFooter {
+    font-size: 17.77778px;
+    font-family: Hind-Regular; }
+  footer div div nav ul li .errorFooter {
     font-size: 15.2px; }
+
+footer div div .footerMobile ul {
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px; }
+
+footer div div nav .redes {
+  color: #e6e6e6; }
+
+footer div div nav .compartir .fa-ul {
+  margin: 0px 0px 0px 64px; }
+
+footer .redesMobile {
+  display: none; }
 
 @media only screen and (max-width: 991.98px) {
   header .headerMobile {
     display: flex;
     justify-content: center; }
-  footer {
-    height: 10vh; }
-    footer nav div {
-      display: flex;
-      justify-content: center; }
   #headerDos div nav div div ul .listaNavUno {
     padding-left: 0vw; } }
 
@@ -121,29 +131,39 @@ footer {
   header .headerMobile {
     display: flex;
     justify-content: center; }
-  footer {
-    height: 10vh; }
-    footer nav div {
-      display: flex;
-      justify-content: center; }
   #headerDos div nav div div ul .listaNavUno {
     padding-left: 0vw; }
   .btnBuscar {
-    display: none !important; } }
+    display: none !important; }
+  footer div div .footerMobile ul {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px; }
+    footer div div .footerMobile ul .redesDesktop {
+      display: none; }
+  footer .redesMobile {
+    display: contents; }
+    footer .redesMobile div nav ul {
+      margin: 0px 0px 0px 0px;
+      padding: 0px 0px 0px 64px; } }
 
 @media only screen and (max-width: 575.98px) {
   header .headerMobile {
     display: flex;
     justify-content: center; }
-  footer {
-    height: 10vh; }
-    footer nav div {
-      display: flex;
-      justify-content: center; }
   #headerDos div nav div div ul .listaNavUno {
     padding-left: 0vw; }
   .btnBuscar {
-    display: none !important; } }
+    display: none !important; }
+  footer div div .footerMobile ul {
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px; }
+    footer div div .footerMobile ul .redesDesktop {
+      display: none; }
+  footer .redesMobile {
+    display: contents; }
+    footer .redesMobile div nav ul {
+      margin: 0px 0px 0px 0px;
+      padding: 0px 0px 0px 64px; } }
 
 .noEncontrada {
   background-color: #343a40; }

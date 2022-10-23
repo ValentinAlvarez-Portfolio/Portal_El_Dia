@@ -1,26 +1,78 @@
 @mixin footer {
+
+
     footer {
-        height: $alturaFooter*2;
 
+        div {
 
-        nav {
             div {
-                ul {
-                    li {
-                        a {
-                            font-size: ($rem/0.9);
 
+                nav {
+
+
+                    ul {
+
+                        list-style: none;
+
+                        li {
+
+
+                            .textoFooter {
+                                font-size: ($rem/0.9);
+                                font-family: map-get($fuentes, "regular");
+                            }
+
+                            .errorFooter {
+                                font-size: ($rem*0.95);
+                            }
 
                         }
 
-                        .errorFooter {
-                            font-size: ($rem*0.95);
+                    }
+
+
+                }
+
+                .footerMobile {
+
+                    ul {
+                        margin: $rem*0 $rem*0 $rem*0 $rem*0;
+                        padding: $rem*0 $rem*0 $rem*0 $rem*0;
+                    }
+
+                }
+
+
+            }
+
+            div {
+
+                nav {
+
+                    .redes {
+                        color: map-get($paletaDeColores, "color-texto-headerTres");
+                    }
+
+                    .compartir {
+
+                        .fa-ul {
+                            margin: $rem*0 $rem*0 $rem*0 $rem*4;
                         }
 
                     }
 
                 }
+
             }
+
+
         }
+
+        .redesMobile {
+            display: none;
+        }
+
+
     }
+
 }
