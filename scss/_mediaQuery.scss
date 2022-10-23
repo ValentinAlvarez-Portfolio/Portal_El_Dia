@@ -23,7 +23,15 @@
                                     .listaNavUno {
                                         padding-left: 0vw;
                                     }
+
+                                    .btnBuscarMobile {
+                                        display: contents;
+                                    }
                                 }
+                            }
+
+                            .btnBuscar {
+                                display: none !important;
                             }
                         }
                     }
@@ -52,16 +60,22 @@
                                     .listaNavUno {
                                         padding-left: 0vw;
                                     }
+
+                                    .btnBuscarMobile {
+                                        display: contents;
+                                    }
                                 }
+                            }
+
+                            .btnBuscar {
+                                display: none !important;
                             }
                         }
                     }
                 }
             }
 
-            .btnBuscar {
-                display: none !important;
-            }
+
 
             footer {
                 div {
@@ -113,16 +127,22 @@
                                     .listaNavUno {
                                         padding-left: 0vw;
                                     }
+
+                                    .btnBuscarMobile {
+                                        display: contents;
+                                    }
                                 }
+                            }
+
+                            .btnBuscar {
+                                display: none !important;
                             }
                         }
                     }
                 }
             }
 
-            .btnBuscar {
-                display: none !important;
-            }
+
 
             footer {
                 div {
@@ -135,6 +155,7 @@
                                 .redesDesktop {
                                     display: none;
                                 }
+
                             }
                         }
                     }
