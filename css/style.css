@@ -5,7 +5,6 @@
   src: url(../assets/fonts/Hind-Regular.ttf); }
 
 body {
-  overflow-x: hidden;
   height: 100%;
   width: 100%; }
 
@@ -47,6 +46,21 @@ a {
   text-decoration: none;
   outline: none; }
 
+.textoNavVertical {
+  color: #a0a0a0; }
+
+.textoFooter {
+  color: #a0a0a0; }
+
+.fa-newspaper {
+  color: #a0a0a0; }
+
+.fa-fire {
+  color: #a0a0a0; }
+
+.fa-clock {
+  color: #a0a0a0; }
+
 #headerUno {
   background-color: #343A40; }
 
@@ -57,14 +71,11 @@ a {
 #headerDos div nav div div ul .listaNavUno {
   padding-left: 3vw; }
 
+#headerDos div nav div div ul .btnBuscarMobile {
+  display: none; }
+
 .headerTres nav div .textoHeaderTres {
   font-family: Hind-Regular; }
-
-.textoHeaderTres {
-  color: #e6e6e6; }
-
-.textoFooter {
-  color: #a0a0a0; }
 
 img:hover {
   animation: pulse;
@@ -81,6 +92,61 @@ main div div div .underlineNoticias:hover {
 
 main div div div .imgNoticias:hover {
   animation: none; }
+
+aside nav div .navegadorVertical {
+  position: fixed;
+  right: 1%;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 1px outset #DEE2E6;
+  background-color: #DEE2E6;
+  height: 8vh;
+  width: 32px;
+  opacity: 70%;
+  padding: 0px; }
+  aside nav div .navegadorVertical .botonNavVertical {
+    position: fixed;
+    right: 12%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #212529; }
+    aside nav div .navegadorVertical .botonNavVertical .fa-beat {
+      animation-duration: 5s; }
+    aside nav div .navegadorVertical .botonNavVertical .fa-beat:hover {
+      animation-duration: 1.5s; }
+
+aside nav div .bordesBoton:focus {
+  outline: none;
+  box-shadow: none; }
+
+aside nav div .offcanvas {
+  position: fixed;
+  width: 16vw !important;
+  height: 55vh !important;
+  top: 25%;
+  background-color: #212529;
+  border: 0.5px outset #DEE2E6; }
+  aside nav div .offcanvas .offcanvas-header {
+    margin-bottom: 0px;
+    padding-bottom: 20.8px; }
+  aside nav div .offcanvas .offcanvas-body ul li .card {
+    background-color: transparent;
+    border: 0px; }
+    aside nav div .offcanvas .offcanvas-body ul li .card .card-body .fa-newspaper {
+      padding-left: 17.6px; }
+    aside nav div .offcanvas .offcanvas-body ul li .card .card-body .fa-fire {
+      padding-left: 17.6px; }
+    aside nav div .offcanvas .offcanvas-body ul li .card .card-body .fa-clock {
+      padding-left: 17.6px; }
+    aside nav div .offcanvas .offcanvas-body ul li .card .card-body .fa-beat {
+      animation-duration: 5s; }
+    aside nav div .offcanvas .offcanvas-body ul li .card .card-body .fa-beat:hover {
+      animation-duration: 1.5s; }
+    aside nav div .offcanvas .offcanvas-body ul li .card .card-body .textoNavVertical {
+      font-family: Hind-Regular;
+      font-size: 17.6px; }
+    aside nav div .offcanvas .offcanvas-body ul li .card .card-body .textoNavVertical:hover {
+      color: #e6e6e6; }
 
 .compartir ul {
   display: flex;
@@ -111,9 +177,6 @@ footer div div .footerMobile ul {
   margin: 0px 0px 0px 0px;
   padding: 0px 0px 0px 0px; }
 
-footer div div nav .redes {
-  color: #e6e6e6; }
-
 footer div div nav .compartir .fa-ul {
   margin: 0px 0px 0px 64px; }
 
@@ -125,7 +188,16 @@ footer .redesMobile {
     display: flex;
     justify-content: center; }
   #headerDos div nav div div ul .listaNavUno {
-    padding-left: 0vw; } }
+    padding-left: 0vw; }
+  #headerDos div nav div div ul .btnBuscarMobile {
+    display: contents; }
+  #headerDos div nav div .btnBuscar {
+    display: none !important; }
+  aside nav div .offcanvas {
+    width: 22vw !important;
+    height: 55vh !important; }
+  aside nav div .offcanvas-body ul li .card .card-body .textoNavVertical {
+    font-size: 4.8px; } }
 
 @media only screen and (max-width: 767.98px) {
   header .headerMobile {
@@ -133,8 +205,18 @@ footer .redesMobile {
     justify-content: center; }
   #headerDos div nav div div ul .listaNavUno {
     padding-left: 0vw; }
-  .btnBuscar {
+  #headerDos div nav div div ul .btnBuscarMobile {
+    display: contents; }
+  #headerDos div nav div .btnBuscar {
     display: none !important; }
+  aside nav div .navegadorVertical {
+    top: 29%; }
+  aside nav div .offcanvas {
+    width: 30vw !important;
+    height: 55vh !important;
+    top: 25%; }
+  aside nav div .offcanvas-body ul li .card .card-body .textoNavVertical {
+    font-size: 4.8px; }
   footer div div .footerMobile ul {
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px; }
@@ -152,8 +234,18 @@ footer .redesMobile {
     justify-content: center; }
   #headerDos div nav div div ul .listaNavUno {
     padding-left: 0vw; }
-  .btnBuscar {
+  #headerDos div nav div div ul .btnBuscarMobile {
+    display: contents; }
+  #headerDos div nav div .btnBuscar {
     display: none !important; }
+  aside nav div .navegadorVertical {
+    top: 29%; }
+  aside nav div .offcanvas {
+    width: 45vw !important;
+    height: 55vh !important;
+    top: 25%; }
+  aside nav div .offcanvas-body ul li .card .card-body .textoNavVertical {
+    font-size: 4.8px; }
   footer div div .footerMobile ul {
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px; }

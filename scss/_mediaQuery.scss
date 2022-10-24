@@ -23,13 +23,49 @@
                                     .listaNavUno {
                                         padding-left: 0vw;
                                     }
+
+                                    .btnBuscarMobile {
+                                        display: contents;
+                                    }
                                 }
+                            }
+
+                            .btnBuscar {
+                                display: none !important;
                             }
                         }
                     }
                 }
             }
 
+            aside {
+                nav {
+                    div {
+
+                        .offcanvas {
+                            width: 22vw !important;
+                            height: 55vh !important;
+                        }
+
+                        .offcanvas-body {
+                            ul {
+
+                                li {
+
+                                    .card {
+                                        .card-body {
+                                            .textoNavVertical {
+                                                font-size: $rem*0.3;
+                                            }
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+            }
 
         }
     }
@@ -52,15 +88,52 @@
                                     .listaNavUno {
                                         padding-left: 0vw;
                                     }
+
+                                    .btnBuscarMobile {
+                                        display: contents;
+                                    }
                                 }
+                            }
+
+                            .btnBuscar {
+                                display: none !important;
                             }
                         }
                     }
                 }
             }
 
-            .btnBuscar {
-                display: none !important;
+            aside {
+                nav {
+                    div {
+                        .navegadorVertical {
+                            top: 29%;
+                        }
+
+                        .offcanvas {
+                            width: 30vw !important;
+                            height: 55vh !important;
+                            top: 25%;
+                        }
+
+                        .offcanvas-body {
+                            ul {
+
+                                li {
+
+                                    .card {
+                                        .card-body {
+                                            .textoNavVertical {
+                                                font-size: $rem*0.3;
+                                            }
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
             }
 
             footer {
@@ -113,6 +186,47 @@
                                     .listaNavUno {
                                         padding-left: 0vw;
                                     }
+
+                                    .btnBuscarMobile {
+                                        display: contents;
+                                    }
+                                }
+                            }
+
+                            .btnBuscar {
+                                display: none !important;
+                            }
+                        }
+                    }
+                }
+            }
+
+            aside {
+                nav {
+                    div {
+                        .navegadorVertical {
+                            top: 29%;
+                        }
+
+                        .offcanvas {
+                            width: 45vw !important;
+                            height: 55vh !important;
+                            top: 25%;
+                        }
+
+                        .offcanvas-body {
+                            ul {
+
+                                li {
+
+                                    .card {
+                                        .card-body {
+                                            .textoNavVertical {
+                                                font-size: $rem*0.3;
+                                            }
+                                        }
+                                    }
+
                                 }
                             }
                         }
@@ -120,9 +234,6 @@
                 }
             }
 
-            .btnBuscar {
-                display: none !important;
-            }
 
             footer {
                 div {
@@ -135,6 +246,7 @@
                                 .redesDesktop {
                                     display: none;
                                 }
+
                             }
                         }
                     }
@@ -170,8 +282,6 @@
             outline: none;
         }
 
-        @include headers;
-
         @each $name,
         $colorTextos in $clasesTextos {
             .#{$name} {
@@ -179,7 +289,11 @@
             }
         }
 
+        @include headers;
+
         @include main;
+
+        @include sidebar;
 
         @include compartir;
 
