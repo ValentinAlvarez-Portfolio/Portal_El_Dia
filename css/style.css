@@ -61,6 +61,30 @@ a {
 .fa-clock {
   color: #a0a0a0; }
 
+.fa-landmark {
+  color: #a0a0a0; }
+
+.fa-globe {
+  color: #a0a0a0; }
+
+.fa-money-bill-wave {
+  color: #a0a0a0; }
+
+.fa-dollar-sign {
+  color: #a0a0a0; }
+
+.fa-futbol {
+  color: #a0a0a0; }
+
+.fa-basketball {
+  color: #a0a0a0; }
+
+.fa-paintbrush {
+  color: #a0a0a0; }
+
+.fa-clapperboard {
+  color: #a0a0a0; }
+
 #headerUno {
   background-color: #343A40; }
 
@@ -119,34 +143,79 @@ aside nav div .bordesBoton:focus {
   outline: none;
   box-shadow: none; }
 
-aside nav div .offcanvas {
+aside nav div .offcanvasIndex {
   position: fixed;
   width: 16vw !important;
-  height: 55vh !important;
+  height: 60vh !important;
   top: 25%;
   background-color: #212529;
   border: 0.5px outset #DEE2E6; }
-  aside nav div .offcanvas .offcanvas-header {
+  aside nav div .offcanvasIndex .offcanvas-header {
     margin-bottom: 0px;
     padding-bottom: 20.8px; }
-  aside nav div .offcanvas .offcanvas-body ul li .card {
-    background-color: transparent;
-    border: 0px; }
-    aside nav div .offcanvas .offcanvas-body ul li .card .card-body .fa-newspaper {
-      padding-left: 17.6px; }
-    aside nav div .offcanvas .offcanvas-body ul li .card .card-body .fa-fire {
-      padding-left: 17.6px; }
-    aside nav div .offcanvas .offcanvas-body ul li .card .card-body .fa-clock {
-      padding-left: 17.6px; }
-    aside nav div .offcanvas .offcanvas-body ul li .card .card-body .fa-beat {
-      animation-duration: 5s; }
-    aside nav div .offcanvas .offcanvas-body ul li .card .card-body .fa-beat:hover {
-      animation-duration: 1.5s; }
-    aside nav div .offcanvas .offcanvas-body ul li .card .card-body .textoNavVertical {
-      font-family: Hind-Regular;
-      font-size: 17.6px; }
-    aside nav div .offcanvas .offcanvas-body ul li .card .card-body .textoNavVertical:hover {
-      color: #e6e6e6; }
+  aside nav div .offcanvasIndex .offcanvas-body {
+    overflow-y: hidden; }
+    aside nav div .offcanvasIndex .offcanvas-body ul li .card {
+      background-color: transparent;
+      border: 0px; }
+      aside nav div .offcanvasIndex .offcanvas-body ul li .card .card-body .fa-newspaper {
+        padding-left: 17.6px; }
+      aside nav div .offcanvasIndex .offcanvas-body ul li .card .card-body .fa-fire {
+        padding-left: 17.6px; }
+      aside nav div .offcanvasIndex .offcanvas-body ul li .card .card-body .fa-clock {
+        padding-left: 17.6px; }
+      aside nav div .offcanvasIndex .offcanvas-body ul li .card .card-body .fa-landmark {
+        padding-left: 17.6px; }
+      aside nav div .offcanvasIndex .offcanvas-body ul li .card .card-body .fa-globe {
+        padding-left: 16px; }
+      aside nav div .offcanvasIndex .offcanvas-body ul li .card .card-body .fa-beat {
+        animation-duration: 5s; }
+      aside nav div .offcanvasIndex .offcanvas-body ul li .card .card-body .fa-beat:hover {
+        animation-duration: 1.5s; }
+      aside nav div .offcanvasIndex .offcanvas-body ul li .card .card-body .textoNavVertical {
+        font-family: Hind-Regular;
+        font-size: 17.6px; }
+      aside nav div .offcanvasIndex .offcanvas-body ul li .card .card-body .textoNavVertical:hover {
+        color: #e6e6e6; }
+
+aside nav div .offcanvasSecciones {
+  position: fixed;
+  width: 25vw !important;
+  height: 36vh !important;
+  top: 32%;
+  background-color: #212529;
+  border: 0.5px outset #DEE2E6; }
+  aside nav div .offcanvasSecciones .offcanvas-header {
+    margin-bottom: 0px;
+    padding-bottom: 20.8px; }
+  aside nav div .offcanvasSecciones .offcanvas-body {
+    overflow-y: hidden; }
+    aside nav div .offcanvasSecciones .offcanvas-body ul li .card {
+      background-color: transparent;
+      border: 0px; }
+      aside nav div .offcanvasSecciones .offcanvas-body ul li .card .card-body .fa-newspaper,
+      aside nav div .offcanvasSecciones .offcanvas-body ul li .card .card-body .fa-fire,
+      aside nav div .offcanvasSecciones .offcanvas-body ul li .card .card-body .fa-clock,
+      aside nav div .offcanvasSecciones .offcanvas-body ul li .card .card-body .fa-landmark,
+      aside nav div .offcanvasSecciones .offcanvas-body ul li .card .card-body .fa-money-bill-wave,
+      aside nav div .offcanvasSecciones .offcanvas-body ul li .card .card-body .fa-paintbrush {
+        padding-left: 17.6px; }
+      aside nav div .offcanvasSecciones .offcanvas-body ul li .card .card-body .fa-globe,
+      aside nav div .offcanvasSecciones .offcanvas-body ul li .card .card-body .fa-futbol,
+      aside nav div .offcanvasSecciones .offcanvas-body ul li .card .card-body .fa-clapperboard {
+        padding-left: 16px; }
+      aside nav div .offcanvasSecciones .offcanvas-body ul li .card .card-body .fa-dollar-sign,
+      aside nav div .offcanvasSecciones .offcanvas-body ul li .card .card-body .fa-basketball {
+        padding-left: 14.4px; }
+      aside nav div .offcanvasSecciones .offcanvas-body ul li .card .card-body .fa-beat {
+        animation-duration: 5s; }
+      aside nav div .offcanvasSecciones .offcanvas-body ul li .card .card-body .fa-beat:hover {
+        animation-duration: 1.5s; }
+      aside nav div .offcanvasSecciones .offcanvas-body ul li .card .card-body .textoNavVertical {
+        font-family: Hind-Regular;
+        font-size: 17.6px; }
+      aside nav div .offcanvasSecciones .offcanvas-body ul li .card .card-body .textoNavVertical:hover {
+        color: #e6e6e6; }
 
 .compartir ul {
   display: flex;
@@ -193,9 +262,13 @@ footer .redesMobile {
     display: contents; }
   #headerDos div nav div .btnBuscar {
     display: none !important; }
-  aside nav div .offcanvas {
+  aside nav div .offcanvasIndex {
     width: 22vw !important;
-    height: 55vh !important; }
+    height: 64vh !important; }
+  aside nav div .offcanvasSecciones {
+    width: 31.5vw !important;
+    height: 40vh !important;
+    top: 28%; }
   aside nav div .offcanvas-body ul li .card .card-body .textoNavVertical {
     font-size: 4.8px; } }
 
@@ -209,12 +282,13 @@ footer .redesMobile {
     display: contents; }
   #headerDos div nav div .btnBuscar {
     display: none !important; }
-  aside nav div .navegadorVertical {
-    top: 29%; }
-  aside nav div .offcanvas {
+  aside nav div .offcanvasIndex {
     width: 30vw !important;
-    height: 55vh !important;
-    top: 25%; }
+    height: 64vh !important;
+    top: 18%; }
+  aside nav div .offcanvasSecciones {
+    width: 42vw !important;
+    height: 40vh !important; }
   aside nav div .offcanvas-body ul li .card .card-body .textoNavVertical {
     font-size: 4.8px; }
   footer div div .footerMobile ul {
@@ -238,14 +312,17 @@ footer .redesMobile {
     display: contents; }
   #headerDos div nav div .btnBuscar {
     display: none !important; }
-  aside nav div .navegadorVertical {
-    top: 29%; }
-  aside nav div .offcanvas {
+  aside nav div .offcanvasIndex {
     width: 45vw !important;
-    height: 55vh !important;
-    top: 25%; }
-  aside nav div .offcanvas-body ul li .card .card-body .textoNavVertical {
-    font-size: 4.8px; }
+    height: 60vh !important;
+    top: 18%; }
+  aside nav div .offcanvasSecciones {
+    width: 60vw !important;
+    height: 40vh !important; }
+  aside nav div .offcanvas-body {
+    overflow-y: show; }
+    aside nav div .offcanvas-body ul li .card .card-body .textoNavVertical {
+      font-size: 4.8px; }
   footer div div .footerMobile ul {
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px; }

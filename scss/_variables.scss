@@ -26,7 +26,16 @@ $fuentes: ("bold": Hind-Bold,
 );
 
 $clasesTextos: (textoNavVertical: (map-get($paletaDeColores, "color-texto-footer")),
-    textoFooter: (map-get($paletaDeColores, "color-texto-footer")),
-    fa-newspaper: (map-get($paletaDeColores, "color-texto-footer")),
+    textoFooter: (map-get($paletaDeColores, "color-texto-footer")));
+
+$clasesIconos: (fa-newspaper: (map-get($paletaDeColores, "color-texto-footer")),
     fa-fire: (map-get($paletaDeColores, "color-texto-footer")),
-    fa-clock: (map-get($paletaDeColores, "color-texto-footer")));
+    fa-clock: (map-get($paletaDeColores, "color-texto-footer")),
+    fa-landmark: (map-get($paletaDeColores, "color-texto-footer")),
+    fa-globe: (map-get($paletaDeColores, "color-texto-footer")),
+    fa-money-bill-wave: (map-get($paletaDeColores, "color-texto-footer")),
+    fa-dollar-sign: (map-get($paletaDeColores, "color-texto-footer")),
+    fa-futbol: (map-get($paletaDeColores, "color-texto-footer")),
+    fa-basketball: (map-get($paletaDeColores, "color-texto-footer")),
+    fa-paintbrush: (map-get($paletaDeColores, "color-texto-footer")),
+    fa-clapperboard: (map-get($paletaDeColores, "color-texto-footer")));

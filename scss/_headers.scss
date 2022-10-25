@@ -1,3 +1,8 @@
+@mixin flexbox ($posicionamiento:col) {
+    display: flex;
+    justify-content: center;
+}
+
 @mixin headers {
     #headerUno {
         background-color: map-get($paletaDeColores, "color-headerUno");
@@ -39,4 +44,101 @@
         }
     }
 
+}
+
+@mixin headersDesktopSm {
+    header {
+        .headerMobile {
+            @include flexbox($posicionamiento:col);
+        }
+    }
+
+    #headerDos {
+        div {
+            nav {
+                div {
+                    div {
+                        ul {
+                            .listaNavUno {
+                                padding-left: 0vw;
+                            }
+
+                            .btnBuscarMobile {
+                                display: contents;
+                            }
+                        }
+                    }
+
+                    .btnBuscar {
+                        display: none !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin headersTablet {
+    header {
+        .headerMobile {
+            @include flexbox($posicionamiento:col);
+        }
+    }
+
+
+    #headerDos {
+        div {
+            nav {
+                div {
+                    div {
+                        ul {
+                            .listaNavUno {
+                                padding-left: 0vw;
+                            }
+
+                            .btnBuscarMobile {
+                                display: contents;
+                            }
+                        }
+                    }
+
+                    .btnBuscar {
+                        display: none !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin headersMobile {
+    header {
+        .headerMobile {
+            @include flexbox($posicionamiento:col);
+        }
+    }
+
+    #headerDos {
+        div {
+            nav {
+                div {
+                    div {
+                        ul {
+                            .listaNavUno {
+                                padding-left: 0vw;
+                            }
+
+                            .btnBuscarMobile {
+                                display: contents;
+                            }
+                        }
+                    }
+
+                    .btnBuscar {
+                        display: none !important;
+                    }
+                }
+            }
+        }
+    }
 }
