@@ -76,3 +76,70 @@
     }
 
 }
+
+@mixin footerTablet {
+    footer {
+        div {
+            div {
+                .footerMobile {
+                    ul {
+                        margin: $rem*0 $rem*0 $rem*0 $rem*0;
+                        padding: $rem*0 $rem*0 $rem*0 $rem*0;
+
+                        .redesDesktop {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+
+
+        .redesMobile {
+            display: contents;
+
+            div {
+                nav {
+                    ul {
+                        margin: $rem*0 $rem*0 $rem*0 $rem*0;
+                        padding: $rem*0 $rem*0 $rem*0 $rem*4;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@mixin footerMobile {
+    footer {
+        div {
+            div {
+                .footerMobile {
+                    ul {
+                        margin: $rem*0 $rem*0 $rem*0 $rem*0;
+                        padding: $rem*0 $rem*0 $rem*0 $rem*0;
+
+                        .redesDesktop {
+                            display: none;
+                        }
+
+                    }
+                }
+            }
+        }
+
+
+        .redesMobile {
+            display: contents;
+
+            div {
+                nav {
+                    ul {
+                        margin: $rem*0 $rem*0 $rem*0 $rem*0;
+                        padding: $rem*0 $rem*0 $rem*0 $rem*4;
+                    }
+                }
+            }
+        }
+    }
+}

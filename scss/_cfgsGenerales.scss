@@ -1,0 +1,26 @@
+@mixin configuracionesGenerales {
+    p {
+        font-family: map-get($fuentes, "regular");
+        font-size: $rem+2px;
+        color: map-get($paletaDeColores, "color-parrafos");
+    }
+
+    a {
+        text-decoration: none;
+        outline: none;
+    }
+
+    @each $name,
+    $colorTextos in $clasesTextos {
+        .#{$name} {
+            color: $colorTextos;
+        }
+    }
+
+    @each $name,
+    $colorIconos in $clasesIconos {
+        .#{$name} {
+            color: $colorIconos;
+        }
+    }
+}

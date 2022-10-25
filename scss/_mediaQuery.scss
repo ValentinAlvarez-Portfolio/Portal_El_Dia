@@ -1,293 +1,42 @@
-@mixin flexbox ($posicionamiento:col) {
-    display: flex;
-    justify-content: center;
-}
-
-
 @mixin mediaQuery ($vista) {
 
     @if $vista==desktopSm {
         @media only screen and (max-width:991.98px) {
-            header {
-                .headerMobile {
-                    @include flexbox($posicionamiento:col);
-                }
-            }
 
-            #headerDos {
-                div {
-                    nav {
-                        div {
-                            div {
-                                ul {
-                                    .listaNavUno {
-                                        padding-left: 0vw;
-                                    }
+            @include headersDesktopSm;
 
-                                    .btnBuscarMobile {
-                                        display: contents;
-                                    }
-                                }
-                            }
-
-                            .btnBuscar {
-                                display: none !important;
-                            }
-                        }
-                    }
-                }
-            }
-
-            aside {
-                nav {
-                    div {
-
-                        .offcanvas {
-                            width: 22vw !important;
-                            height: 55vh !important;
-                        }
-
-                        .offcanvas-body {
-                            ul {
-
-                                li {
-
-                                    .card {
-                                        .card-body {
-                                            .textoNavVertical {
-                                                font-size: $rem*0.3;
-                                            }
-                                        }
-                                    }
-
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+            @include sidebarDesktopSm;
 
         }
     }
 
     @else if $vista==tablet {
         @media only screen and (max-width:767.98px) {
-            header {
-                .headerMobile {
-                    @include flexbox($posicionamiento:col);
-                }
-            }
 
+            @include headersTablet;
 
-            #headerDos {
-                div {
-                    nav {
-                        div {
-                            div {
-                                ul {
-                                    .listaNavUno {
-                                        padding-left: 0vw;
-                                    }
+            @include sidebarTablet;
 
-                                    .btnBuscarMobile {
-                                        display: contents;
-                                    }
-                                }
-                            }
+            @include footerTablet;
 
-                            .btnBuscar {
-                                display: none !important;
-                            }
-                        }
-                    }
-                }
-            }
-
-            aside {
-                nav {
-                    div {
-                        .navegadorVertical {
-                            top: 29%;
-                        }
-
-                        .offcanvas {
-                            width: 30vw !important;
-                            height: 55vh !important;
-                            top: 25%;
-                        }
-
-                        .offcanvas-body {
-                            ul {
-
-                                li {
-
-                                    .card {
-                                        .card-body {
-                                            .textoNavVertical {
-                                                font-size: $rem*0.3;
-                                            }
-                                        }
-                                    }
-
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-            footer {
-                div {
-                    div {
-                        .footerMobile {
-                            ul {
-                                margin: $rem*0 $rem*0 $rem*0 $rem*0;
-                                padding: $rem*0 $rem*0 $rem*0 $rem*0;
-
-                                .redesDesktop {
-                                    display: none;
-                                }
-                            }
-                        }
-                    }
-                }
-
-
-                .redesMobile {
-                    display: contents;
-
-                    div {
-                        nav {
-                            ul {
-                                margin: $rem*0 $rem*0 $rem*0 $rem*0;
-                                padding: $rem*0 $rem*0 $rem*0 $rem*4;
-                            }
-                        }
-                    }
-                }
-            }
         }
     }
 
     @else if $vista==mobile {
         @media only screen and (max-width:575.98px) {
-            header {
-                .headerMobile {
-                    @include flexbox($posicionamiento:col);
-                }
-            }
 
-            #headerDos {
-                div {
-                    nav {
-                        div {
-                            div {
-                                ul {
-                                    .listaNavUno {
-                                        padding-left: 0vw;
-                                    }
+            @include headersMobile;
 
-                                    .btnBuscarMobile {
-                                        display: contents;
-                                    }
-                                }
-                            }
+            @include sidebarMobile;
 
-                            .btnBuscar {
-                                display: none !important;
-                            }
-                        }
-                    }
-                }
-            }
+            @include footerMobile;
 
-            aside {
-                nav {
-                    div {
-                        .navegadorVertical {
-                            top: 29%;
-                        }
-
-                        .offcanvas {
-                            width: 45vw !important;
-                            height: 55vh !important;
-                            top: 25%;
-                        }
-
-                        .offcanvas-body {
-                            ul {
-
-                                li {
-
-                                    .card {
-                                        .card-body {
-                                            .textoNavVertical {
-                                                font-size: $rem*0.3;
-                                            }
-                                        }
-                                    }
-
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-
-
-            footer {
-                div {
-                    div {
-                        .footerMobile {
-                            ul {
-                                margin: $rem*0 $rem*0 $rem*0 $rem*0;
-                                padding: $rem*0 $rem*0 $rem*0 $rem*0;
-
-                                .redesDesktop {
-                                    display: none;
-                                }
-
-                            }
-                        }
-                    }
-                }
-
-
-                .redesMobile {
-                    display: contents;
-
-                    div {
-                        nav {
-                            ul {
-                                margin: $rem*0 $rem*0 $rem*0 $rem*0;
-                                padding: $rem*0 $rem*0 $rem*0 $rem*4;
-                            }
-                        }
-                    }
-                }
-            }
         }
     }
 
     @else {
 
-        p {
-            font-family: map-get($fuentes, "regular");
-            font-size: $rem+2px;
-            color: map-get($paletaDeColores, "color-parrafos");
-        }
-
-        a {
-            text-decoration: none;
-            outline: none;
-        }
-
-        @each $name,
-        $colorTextos in $clasesTextos {
-            .#{$name} {
-                color: $colorTextos;
-            }
-        }
+        @include configuracionesGenerales;
 
         @include headers;
 

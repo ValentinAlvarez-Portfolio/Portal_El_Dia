@@ -178,34 +178,6 @@
     </header>
     <!-- Finaliza Header Dos -->
 
-    <!-- Comienza Header Tres -->
-
-    <header class="container shadow-sm mb-4 headerTres" id="arte">
-
-        <!-- Comienza NavBar en Header Tres -->
-
-        <nav class="row navbar bg-dark">
-
-            <!-- Comienzan Items de NavBar en Header Tres -->
-            <div
-                class="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-sm-12 d-flex justify-content-evenly justify-content-sm-around">
-
-                <a class="navbar-brand textoHeaderTres" href="./cultura.html#arte">
-                    Arte
-                </a>
-
-                <a class="navbar-brand textoHeaderTres" href="./cultura.html#entretenimiento">
-                    Entretenimiento
-                </a>
-
-            </div>
-
-            <!-- Finalizan Items de NavBar en Header Tres -->
-
-        </nav>
-
-    </header>
-    <!-- Finaliza Header Tres -->
 
     <!-- Comienza Main -->
 
@@ -217,7 +189,7 @@
 
             <!-- Comienza Arte -->
 
-            <div class="col-12 card mb-3 text-center border-end-0 border-start-0">
+            <div class="col-12 card mb-3 text-center border-end-0 border-start-0" id="arte">
 
                 <div class="card-body">
 
@@ -495,38 +467,10 @@
             <!-- Finaliza Section 3 de Main (Arte) -->
 
 
-            <!-- Comienza Header Tres de Main -->
-
-            <header class="col-12">
-
-                <section data-aos="fade-up" class="container shadow-sm mb-4" id="entretenimiento">
-
-                    <nav class="row navbar bg-dark">
-
-                        <div class="col d-flex justify-content-around">
-
-                            <a class="navbar-brand textoHeaderTres" href="./cultura.html#arte">
-                                Arte
-                            </a>
-
-                            <a class="navbar-brand textoHeaderTres" href="./cultura.html#entretenimiento">
-                                Entretenimiento
-                            </a>
-
-                        </div>
-
-                    </nav>
-
-                </section>
-
-            </header>
-            <!-- Finaliza Header Tres de Main -->
-
-
 
             <!-- Comienza Entretenimiento -->
 
-            <div class="col-12 card mb-3 text-center border-end-0 border-start-0">
+            <div class="col-12 card mb-3 text-center border-end-0 border-start-0" id="entretenimiento">
 
                 <div class="card-body">
 
@@ -726,7 +670,122 @@
     </main>
     <!-- Finaliza Main -->
 
+
+    <!-- Comienza Sidebar -->
+
+    <aside class="container-fluid">
+
+        <!-- Comienza Navbar vertical en Sidebar -->
+
+        <nav class="navbar">
+
+            <div class="container-fluid">
+
+                <!-- Comienza botón para abrir Navbar en Sidebar -->
+
+                <button class="navbar-toggler
+                navegadorVertical bordesBoton shadow-lg" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+
+                    <span class="botonNavVertical">
+
+                        <i class="fa-sharp fa-solid fa-caret-left fa-2xl fa-beat " style="--fa-beat-scale: 0.95;"></i>
+
+                    </span>
+
+                </button>
+                <!-- Finaliza botón para abrir Navbar en Sidebar -->
+
+                <!-- Comienza contenido de Navbar en Sidebar -->
+
+                <div class="offcanvas offcanvasSecciones offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+
+                    <div class="offcanvas-header ">
+
+                        <button type="button" class="btn-close btn-close-white bordesBoton"
+                            data-bs-dismiss="offcanvas"></button>
+
+                    </div>
+
+                    <div class="offcanvas-body">
+
+                        <ul class="navbar-nav justify-content-end flex-grow-1">
+
+                            <li class="nav-item mb-5">
+
+                                <div class="card">
+
+                                    <div class="card-body">
+
+                                        <a class="card-title d-flex justify-content-center pe-3 mb-3"
+                                            href="./cultura.html#arte">
+
+                                            <i class="fa-solid fa-paintbrush fa-2xl fa-beat"
+                                                style="--fa-beat-scale: 0.95;"></i>
+
+                                        </a>
+
+                                        <p class="card-text d-flex justify-content-center">
+
+                                            <a class="nav-link textoNavVertical" href="./cultura.html#arte">
+                                                Arte
+                                            </a>
+
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                            </li>
+
+                            <li class="nav-item mb-5">
+
+                                <div class="card">
+
+                                    <div class="card-body">
+
+                                        <a class="card-title d-flex justify-content-center pe-3 mb-3"
+                                            href="./cultura.html#entretenimiento">
+
+                                            <i class="fa-sharp fa-solid fa-clapperboard fa-2xl fa-beat"
+                                                style="--fa-beat-scale: 0.95;"></i>
+
+                                        </a>
+
+                                        <p class="card-text d-flex justify-content-center">
+
+                                            <a class="nav-link textoNavVertical" href="./cultura.html#entretenimiento">
+                                                Entretenimiento
+                                            </a>
+
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+                <!-- Finaliza contenido de Navbar en Sidebar -->
+
+            </div>
+
+        </nav>
+        <!-- Finaliza Navbar vertical en Sidebar -->
+
+    </aside>
+    <!-- Finaliza Sidebar -->
+
+
     <!-- Comienza Footer 1 (Copyright) -->
+
     <footer class="container-fluid">
 
         <div class="row align-items-center">
@@ -749,6 +808,7 @@
     <!-- Finaliza Footer 1 (Copyright) -->
 
     <!-- Comienza Footer 2 (Navegación) -->
+
     <footer class="container-fluid shadow-sm bg-dark pt-2">
 
 

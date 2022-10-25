@@ -177,34 +177,6 @@
     </header>
     <!-- Finaliza Header Dos -->
 
-    <!-- Comienza Header Tres -->
-
-    <header class="container shadow-sm mb-4 headerTres" id="football">
-
-        <!-- Comienza NavBar en Header Tres -->
-
-        <nav class="row navbar bg-dark">
-
-            <!-- Comienzan Items de NavBar en Header Tres -->
-            <div
-                class="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-sm-12 d-flex justify-content-evenly justify-content-sm-around">
-
-                <a class="navbar-brand textoHeaderTres" href="./deportes.html#football">
-                    Football
-                </a>
-
-                <a class="navbar-brand textoHeaderTres" href="./deportes.html#otrosDeportes">
-                    Otros deportes
-                </a>
-
-            </div>
-
-            <!-- Finalizan Items de NavBar en Header Tres -->
-
-        </nav>
-
-    </header>
-    <!-- Finaliza Header Tres -->
 
     <!-- Comienza Main -->
 
@@ -215,7 +187,7 @@
 
             <!-- Comienza Football -->
 
-            <div class="col-12 card mb-3 text-center border-end-0 border-start-0">
+            <div class="col-12 card mb-3 text-center border-end-0 border-start-0" id="football">
 
                 <div class="card-body">
 
@@ -530,60 +502,12 @@
             </section>
             <!-- Finaliza Section 5 de Football -->
 
-            <!-- Comienza Header Tres -->
-
-            <header class="container shadow-sm mb-4 headerTres" id="otrosDeportes">
-
-                <!-- Comienza NavBar en Header Tres -->
-
-                <nav class="row navbar bg-dark">
-
-                    <!-- Comienzan Items de NavBar en Header Tres -->
-                    <div
-                        class="col-xxl-9 col-xl-9 col-lg-9 col-md-9 col-sm-12 d-flex justify-content-evenly justify-content-sm-around">
-
-                        <a class="navbar-brand textoHeaderTres" href="./deportes.html#football">
-                            Football
-                        </a>
-
-                        <a class="navbar-brand textoHeaderTres" href="./deportes.html#otrosDeportes">
-                            Otros deportes
-                        </a>
-
-                    </div>
-
-                    <div class="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-0">
-
-                        <!-- Comienza Formulario de NavBar en Header Tres -->
-
-                        <form class="d-flex btnBuscar">
-
-                            <input class="form-control form-control-sm me-1" type="search" aria-label="Search">
-                            <button class="btn" type="submit">
-                                <a href="">
-                                    <img class="rounded-circle" src="../../assets/images/index/lupa.jpg" alt="">
-                                </a>
-                            </button>
-
-                        </form>
-
-                        <!-- Finaliza Formulario de NavBar en Header Tres -->
-
-                    </div>
-
-                    <!-- Finalizan Items de NavBar en Header Tres -->
-
-                </nav>
-
-            </header>
-            <!-- Finaliza Header Tres -->
-
 
 
             <!-- Comienza Otros Deportes -->
 
 
-            <div class="col-12 card mb-3 text-center border-end-0 border-start-0">
+            <div class="col-12 card mb-3 text-center border-end-0 border-start-0" id="otrosDeportes">
 
                 <div class="card-body">
 
@@ -912,7 +836,120 @@
     </main>
     <!-- Finaliza Main -->
 
+    <!-- Comienza Sidebar -->
+
+    <aside class="container-fluid">
+
+        <!-- Comienza Navbar vertical en Sidebar -->
+
+        <nav class="navbar">
+
+            <div class="container-fluid">
+
+                <!-- Comienza botón para abrir Navbar en Sidebar -->
+
+                <button class="navbar-toggler
+                navegadorVertical bordesBoton shadow-lg" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+
+                    <span class="botonNavVertical">
+
+                        <i class="fa-sharp fa-solid fa-caret-left fa-2xl fa-beat " style="--fa-beat-scale: 0.95;"></i>
+
+                    </span>
+
+                </button>
+                <!-- Finaliza botón para abrir Navbar en Sidebar -->
+
+                <!-- Comienza contenido de Navbar en Sidebar -->
+
+                <div class="offcanvas offcanvasSecciones offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+
+                    <div class="offcanvas-header ">
+
+                        <button type="button" class="btn-close btn-close-white bordesBoton"
+                            data-bs-dismiss="offcanvas"></button>
+
+                    </div>
+
+                    <div class="offcanvas-body">
+
+                        <ul class="navbar-nav justify-content-end flex-grow-1">
+
+                            <li class="nav-item mb-5">
+
+                                <div class="card">
+
+                                    <div class="card-body">
+
+                                        <a class="card-title d-flex justify-content-center pe-3 mb-3"
+                                            href="./deportes.html#football">
+
+                                            <i class="fa-solid fa-futbol fa-2xl fa-beat"
+                                                style="--fa-beat-scale: 0.95;"></i>
+
+                                        </a>
+
+                                        <p class="card-text d-flex justify-content-center">
+
+                                            <a class="nav-link textoNavVertical" href="./deportes.html#football">
+                                                Football
+                                            </a>
+
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                            </li>
+
+                            <li class="nav-item mb-5">
+
+                                <div class="card">
+
+                                    <div class="card-body">
+
+                                        <a class="card-title d-flex justify-content-center pe-3 mb-3"
+                                            href="./deportes.html#otrosDeportes">
+
+                                            <i class="fa-sharp fa-solid fa-basketball fa-2xl fa-beat"
+                                                style="--fa-beat-scale: 0.95;"></i>
+
+                                        </a>
+
+                                        <p class="card-text d-flex justify-content-center">
+
+                                            <a class="nav-link textoNavVertical" href="./deportes.html#otrosDeportes">
+                                                Otros deportes
+                                            </a>
+
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                            </li>
+
+                        </ul>
+
+                    </div>
+
+                </div>
+                <!-- Finaliza contenido de Navbar en Sidebar -->
+
+            </div>
+
+        </nav>
+        <!-- Finaliza Navbar vertical en Sidebar -->
+
+    </aside>
+    <!-- Finaliza Sidebar -->
+
     <!-- Comienza Footer 1 (Copyright) -->
+
     <footer class="container-fluid">
 
         <div class="row align-items-center">
@@ -935,6 +972,7 @@
     <!-- Finaliza Footer 1 (Copyright) -->
 
     <!-- Comienza Footer 2 (Navegación) -->
+
     <footer class="container-fluid shadow-sm bg-dark pt-2">
 
 
