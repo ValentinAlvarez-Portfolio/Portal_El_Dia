@@ -146,7 +146,7 @@ aside nav div .bordesBoton:focus {
 aside nav div .offcanvasIndex {
   position: fixed;
   width: 16vw !important;
-  height: 60vh !important;
+  height: 50vh !important;
   top: 25%;
   background-color: #212529;
   border: 0.5px outset #DEE2E6; }
@@ -264,7 +264,7 @@ footer .redesMobile {
     display: none !important; }
   aside nav div .offcanvasIndex {
     width: 22vw !important;
-    height: 64vh !important; }
+    height: 55vh !important; }
   aside nav div .offcanvasSecciones {
     width: 31.5vw !important;
     height: 40vh !important;
@@ -284,7 +284,7 @@ footer .redesMobile {
     display: none !important; }
   aside nav div .offcanvasIndex {
     width: 30vw !important;
-    height: 64vh !important;
+    height: 54vh !important;
     top: 18%; }
   aside nav div .offcanvasSecciones {
     width: 42vw !important;
@@ -314,7 +314,7 @@ footer .redesMobile {
     display: none !important; }
   aside nav div .offcanvasIndex {
     width: 45vw !important;
-    height: 60vh !important;
+    height: 55vh !important;
     top: 18%; }
   aside nav div .offcanvasSecciones {
     width: 60vw !important;
