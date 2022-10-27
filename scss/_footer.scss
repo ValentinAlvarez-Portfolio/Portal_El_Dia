@@ -29,9 +29,28 @@
 
                         }
 
+
+
                     }
 
 
+                }
+
+                .navSecciones {
+                    .navbar {
+                        padding-left: $rem*2.5;
+
+                        .nav-itemCultura {
+                            padding-left: $rem*2;
+                        }
+                    }
+
+                }
+
+                .volver {
+                    .navbar {
+                        padding-right: $rem*1.7;
+                    }
                 }
 
                 .footerMobile {
@@ -92,6 +111,20 @@
                         }
                     }
                 }
+
+                .navSecciones {
+                    .navbar {
+                        padding-left: $rem;
+                    }
+
+                }
+
+                .volver {
+                    .navbar {
+                        padding-right: $rem*2.2;
+                    }
+                }
+
             }
         }
 
@@ -125,6 +158,16 @@
                         }
 
                     }
+                }
+
+                .navSecciones {
+                    .navbar {
+
+                        .nav-itemCultura {
+                            padding-left: $rem*0;
+                        }
+                    }
+
                 }
             }
         }

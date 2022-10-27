@@ -146,7 +146,7 @@ aside nav div .bordesBoton:focus {
 aside nav div .offcanvasIndex {
   position: fixed;
   width: 16vw !important;
-  height: 50vh !important;
+  height: 53vh !important;
   top: 25%;
   background-color: #212529;
   border: 0.5px outset #DEE2E6; }
@@ -234,13 +234,23 @@ aside nav div .offcanvasSecciones {
   .compartir ul li .fa-shake:hover {
     animation-duration: 2s; }
 
-footer div div nav ul {
-  list-style: none; }
-  footer div div nav ul li .textoFooter {
-    font-size: 17.77778px;
-    font-family: Hind-Regular; }
-  footer div div nav ul li .errorFooter {
-    font-size: 15.2px; }
+footer div div nav {
+  padding: 0px; }
+  footer div div nav ul {
+    list-style: none; }
+    footer div div nav ul li .textoFooter {
+      font-size: 17.77778px;
+      font-family: Hind-Regular; }
+    footer div div nav ul li .errorFooter {
+      font-size: 15.2px; }
+
+footer div div .navSecciones .navbar {
+  padding-left: 40px; }
+  footer div div .navSecciones .navbar .nav-itemCultura {
+    padding-left: 32px; }
+
+footer div div .volver .navbar {
+  padding-right: 27.2px; }
 
 footer div div .footerMobile ul {
   margin: 0px 0px 0px 0px;
@@ -296,6 +306,10 @@ footer .redesMobile {
     padding: 0px 0px 0px 0px; }
     footer div div .footerMobile ul .redesDesktop {
       display: none; }
+  footer div div .navSecciones .navbar {
+    padding-left: 16px; }
+  footer div div .volver .navbar {
+    padding-right: 35.2px; }
   footer .redesMobile {
     display: contents; }
     footer .redesMobile div nav ul {
@@ -328,6 +342,8 @@ footer .redesMobile {
     padding: 0px 0px 0px 0px; }
     footer div div .footerMobile ul .redesDesktop {
       display: none; }
+  footer div div .navSecciones .navbar .nav-itemCultura {
+    padding-left: 0px; }
   footer .redesMobile {
     display: contents; }
     footer .redesMobile div nav ul {
