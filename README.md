@@ -67,5 +67,5 @@
 -	SEO con Meta tags y para la organización del contenido.
 -	Librería AOS para las animaciones de scroll.
 -	Librería Animate.css para las animaciones de las imágenes.
--	Librería Font Awesome para los íconos para compartir las noticias en las redes sociales.
+-	Librería Font Awesome para los íconos.
 
