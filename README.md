@@ -11,7 +11,7 @@
 
 **<details><summary>![Favicon512](/assets/images/favicon/favicon-16x16.png) 1)  index.html</summary>**
 
-- Sección de Inicio, donde se encuentra la «Portada», con las noticias más destacadas de todas las secciones principales; además de las noticias «Más Leídas» y las noticias de «Última Hora», divididas por un encabezado con una barra de navegación que permite dirigirse con facilidad a cualquiera sus secciones internas.
+- Sección de Inicio, donde se encuentra la «Portada», con las noticias más destacadas de todas las secciones principales; además de las noticias «Más Leídas» y las noticias de «Última Hora», divididas por un encabezado que permite dirigirse con facilidad a cualquiera sus secciones internas, mediante la implementación de una barra de navegación lateral.
 
 </details>
 
@@ -53,7 +53,9 @@
 
 - Se mantienen las noticias de «Más Leídas», porque equivalen a las que se muestran en la sección de Inicio. 
 - Se modifican las noticias de «Más Noticias», para que estén relacionadas a la noticia que se está mostrando.
-- Se añaden etiquetas a, strong, h3 y em según si la noticia lo requiere.  
+- Se añaden etiquetas «a», «strong», «h3» y «em» según si la noticia lo requiere.  
+
+> Las noticias de política nacional, dentro de la sección «Política», tienen comentarios en el código para facilitar la lectura del formato utilizado.  
 
 </details>
 
